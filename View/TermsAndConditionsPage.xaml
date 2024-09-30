@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.View.TermsAndConditionsPage"
+             Title="Términos y Condiciones"
+             BackgroundColor="#212832">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Términos y Condiciones de Uso y Política de Tratamiento de Datos de EventManager"
+                   TextColor="#D15D00"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Bienvenida y Aceptación\nAl usar EventManager, aceptas estos Términos y Condiciones. Si no estás de acuerdo, no uses la aplicación."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Uso de la Aplicación\nEventManager está diseñado para gestionar y participar en eventos. No debe usarse para actividades ilícitas."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Registro de Usuario\nEs necesario registrarse con un nombre y correo electrónico reales, y mantener la confidencialidad de los datos de acceso."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Responsabilidades del Usuario\nEl usuario es responsable del uso adecuado de la aplicación y la veracidad de la información proporcionada. EventManager no se hace responsable de errores o mal uso."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Modificaciones de Servicios\nEventManager puede modificar o interrumpir partes de la aplicación sin previo aviso."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Propiedad Intelectual\nTodos los derechos sobre la aplicación son propiedad de POTAXIE, protegidos por leyes de propiedad intelectual."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Limitación de Responsabilidad\nEl uso de la aplicación es bajo tu propio riesgo, y EventManager no se responsabiliza por daños derivados de su uso."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Política de Tratamiento de Datos\nCumplimiento Legal\nEventManager se adhiere a leyes de protección de datos como el GDPR y la LFPDPPP, recopilando solo datos esenciales."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Datos Recopilados\n- Registro: nombre y correo electrónico.\n- Eventos: fechas, participantes, lugar."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Finalidad del Tratamiento de Datos\nLos datos se utilizan para gestionar cuentas y eventos, así como mejorar la funcionalidad de la aplicación."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Minimización de Datos\nSe recogen solo los datos necesarios para la experiencia del usuario."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Cifrado y Seguridad\nSe implementan medidas de seguridad robustas, como cifrado TLS y AES para proteger la información."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Conservación de Datos\nLos datos se conservarán mientras sean necesarios para gestionar eventos y se eliminarán o anonimizarán posteriormente."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Aviso de Privacidad\nSe detalla cómo se recopilan, utilizan y protegen los datos. EventManager cumple con las normativas de protección de datos."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Uso de Datos\nLa información se utiliza para gestionar cuentas, enviar notificaciones sobre eventos y mejorar la experiencia del usuario."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Compartición de Datos\nLos datos se compartirán con terceros solo cuando sea necesario para el funcionamiento de la aplicación."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Label Text="Derechos del Usuario\nTienes derecho a acceder, corregir o eliminar tus datos personales en cualquier momento."
+                   TextColor="White"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"/>
+
+            <Button Text="Aceptar"
+                    BackgroundColor="#D15D00"
+                    TextColor="White"
+                    Margin="0,20,0,0"
+                    Clicked="OnAcceptButtonClicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
