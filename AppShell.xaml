@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell x:Class="TiAppMovi.AppShell"
+       xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:Events="clr-namespace:TiAppMovi.Views.Events"
+       xmlns:Notifications="clr-namespace:TiAppMovi.Views.Notifications"
+       xmlns:Profile="clr-namespace:TiAppMovi.Views.Profile"
+       xmlns:Videos="clr-namespace:TiAppMovi.Views.Videos"
+       xmlns:Views="clr-namespace:TiAppMovi.Views"
+       Shell.FlyoutBehavior="Disabled"
+       Title="TiAppMovi"
+       BackgroundColor="White"
+       Shell.TabBarBackgroundColor="White"
+       Shell.TabBarForegroundColor="#009b84"
+       Shell.TabBarUnselectedColor="#A9A9A9"
+       Shell.TabBarTitleColor="#009b84">
+
+    <TabBar>
+        <ShellContent Title="Inicio" Icon="ini.png" ContentTemplate="{DataTemplate Views:HomePage}" />
+        <ShellContent Title="Eventos" Icon="caleda.png" ContentTemplate="{DataTemplate Events:EventsTabPage}" />
+        <ShellContent Title="Notificaciones" Icon="not.png" ContentTemplate="{DataTemplate Notifications:NotiPage}" />
+        <ShellContent Title="Videos" Icon="vid.png" ContentTemplate="{DataTemplate Videos:VideosPage}" />
+        <ShellContent Title="Perfil" Icon="usu.png" ContentTemplate="{DataTemplate Profile:ProfilePage}" />
+    </TabBar>
+</Shell>

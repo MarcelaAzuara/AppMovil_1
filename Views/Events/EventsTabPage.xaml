@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiAppMovi.Views.Events.EventsTabPage"
+             Title="EventsTabPage"
+             BackgroundColor="White">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.9*" />
+            <RowDefinition Height="0.1*" />
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="0" Aspect="AspectFill" Source="inde.png" HeightRequest="780" />
+
+        <Grid Grid.Row="0">
+            <VerticalStackLayout Margin="0, 0, 0, 0">
+                <Label Margin="-50, 50, 150, 0"
+                       Text="Información"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </Grid>
+
+        <!-- Contenedor del mapa -->
+        <ScrollView Grid.Row="0" Margin="20,200,20,0">
+            <VerticalStackLayout Spacing="20">
+
+
+                <!-- Información adicional -->
+                <Frame Padding="15" BackgroundColor="White" CornerRadius="10" BorderColor="Teal" WidthRequest="370" HeightRequest="250">
+                    <Grid ColumnDefinitions="*,2*" RowDefinitions="Auto,Auto,Auto">
+                        <Image Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Source="mapa.png"
+                               WidthRequest="80" HeightRequest="80"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+
+                        <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="5">
+                            <Label Text="Reunión con empresa Tech"
+                                   FontSize="18"
+                                   FontAttributes="Bold"
+                                   TextColor="#009b84" />
+                            <Label Text="Día 26 de Marzo 2024" 
+                                   FontSize="14"
+                                   TextColor="Black" />
+                            <HorizontalStackLayout>
+                                <Label Text="De forma :" FontAttributes="Bold" FontSize="14" TextColor="#009b84" />
+                                <Label Text="Presencial" FontSize="14" TextColor="Black" />
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout>
+                                <Label Text="Hora: " FontAttributes="Bold" FontSize="14" TextColor="#009b84" />
+                                <Label Text="8:00 - 10:00 am" FontSize="14" TextColor="Black" />
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="1" Grid.Column="1" Spacing="5">
+                            <Label Text="Dirección:" FontAttributes="Bold" FontSize="14" TextColor="#009b84" />
+                            <Label Text="Avenida Hermanos Serdán\nCalle 13 de Santo Domingo" FontSize="14" TextColor="Black" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="2" Grid.ColumnSpan="2" Spacing="5">
+                            <Label Text="Descripción:" FontAttributes="Bold" FontSize="14" TextColor="#009b84" />
+                            <Label Text="Se hará una reunión sobre los temas de negociación gruesa" FontSize="14" TextColor="Black" />
+                        </VerticalStackLayout>
+                    </Grid>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

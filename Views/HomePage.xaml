@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiAppMovi.Views.HomePage"
+             BackgroundColor="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.9*" />
+            <RowDefinition Height="0.1*" />
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="0" Aspect="AspectFill" Source="inde.png" HeightRequest="780"/>
+
+        <Grid Grid.Row="0">
+            <VerticalStackLayout Margin="0, 0, 0, 0">
+                <Label Margin="0, 49, 190, 130"
+                       Text="Próximos eventos"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalOptions="Center" />
+
+                <ScrollView>
+                    <VerticalStackLayout Padding="20">
+                        <Label Text="Marzo"
+                               FontSize="Medium"
+                               FontAttributes="Bold"
+                               TextColor="#009b84"
+                               HorizontalOptions="Center" />
+
+                        <Grid>
+                            <Label Text="Su calendario aquí" HorizontalOptions="Center" />
+                        </Grid>
+
+                        <!-- Event 1 -->
+                        <Frame Padding="0"
+                               BorderColor="#009b84"
+                               CornerRadius="9"
+                               BackgroundColor="White"
+                               HasShadow="False"
+                               HeightRequest="90"
+                               WidthRequest="350"
+                               Margin="10"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center">
+                            <Grid Padding="9"
+                                  HorizontalOptions="FillAndExpand"
+                                  VerticalOptions="Center"
+                                  ColumnSpacing="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Column="0" Spacing="2" VerticalOptions="Center">
+                                    <Label Text="Reunión con empresa Tech"
+                                           FontAttributes="Bold"
+                                           TextColor="#009b84"
+                                           FontSize="16" />
+                                    <Label Text="Día 26 de Marzo 2024 8:00"
+                                           FontSize="14"
+                                           TextColor="#A9A9A9" />
+                                </StackLayout>
+
+                                <ImageButton Grid.Column="1"
+                                             Source="dere.png"
+                                             WidthRequest="90"
+                                             HeightRequest="35"
+                                             HorizontalOptions="End"
+                                             VerticalOptions="Center"
+                                             BackgroundColor="Transparent" />
+                            </Grid>
+                        </Frame>
+
+                        <!-- Event 2 -->
+                        <Frame Padding="0"
+                               BorderColor="#009b84"
+                               CornerRadius="9"
+                               BackgroundColor="White"
+                               HasShadow="False"
+                               HeightRequest="90"
+                               WidthRequest="350"
+                               Margin="10"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center">
+                            <Grid Padding="9"
+                                  HorizontalOptions="FillAndExpand"
+                                  VerticalOptions="Center"
+                                  ColumnSpacing="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Column="0" Spacing="2" VerticalOptions="Center">
+                                    <Label Text="Presentación del proyecto X"
+                                           FontAttributes="Bold"
+                                           TextColor="#009b84"
+                                           FontSize="16" />
+                                    <Label Text="Día 27 de Marzo 2024 9:30"
+                                           FontSize="14"
+                                           TextColor="#A9A9A9" />
+                                </StackLayout>
+
+                                <ImageButton Grid.Column="1"
+                                             Source="dere.png"
+                                             WidthRequest="90"
+                                             HeightRequest="35"
+                                             HorizontalOptions="End"
+                                             VerticalOptions="Center"
+                                             BackgroundColor="Transparent" />
+                            </Grid>
+                        </Frame>
+
+
+                        <Frame Padding="0"
+                               BorderColor="#009b84"
+                               CornerRadius="9"
+                               BackgroundColor="White"
+                               HasShadow="False"
+                               HeightRequest="90"
+                               WidthRequest="350"
+                               Margin="10"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center">
+                            <Grid Padding="9"
+                                  HorizontalOptions="FillAndExpand"
+                                  VerticalOptions="Center"
+                                  ColumnSpacing="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Column="0" Spacing="2" VerticalOptions="Center">
+                                    <Label Text="Reunión de equipo interno"
+                                           FontAttributes="Bold"
+                                           TextColor="#009b84"
+                                           FontSize="16" />
+                                    <Label Text="Día 28 de Marzo 2024 10:00"
+                                           FontSize="14"
+                                           TextColor="#A9A9A9" />
+                                </StackLayout>
+
+                                <ImageButton Grid.Column="1"
+                                             Source="dere.png"
+                                             WidthRequest="90"
+                                             HeightRequest="35"
+                                             HorizontalOptions="End"
+                                             VerticalOptions="Center"
+                                             BackgroundColor="Transparent"
+                                            />
+
+                            </Grid>
+                        </Frame>
+
+                    </VerticalStackLayout>
+                </ScrollView>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>
