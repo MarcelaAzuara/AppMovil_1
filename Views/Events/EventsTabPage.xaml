@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             x:Class="TiAppMovi.Views.Events.EventsTabPage"
+             Title="EventsTabPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <!-- Contenido sobre la imagen -->
+        <Grid>
+            <!-- Imagen de fondo -->
+            <Image Source="inde.png"
+                   Aspect="AspectFill"
+                   HeightRequest="780"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Start" />
+
+            <VerticalStackLayout Padding="20" Spacing="20" HorizontalOptions="FillAndExpand">
+                <!-- Título -->
+                <Label Margin="-160, 60, 20, 116"
+                       Text="Información"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalOptions="Center" />
+
+                <!-- Buscador -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                    <Frame BackgroundColor="#f3f2f2"
+                           CornerRadius="20"
+                           Padding="5"
+                           HasShadow="True"
+                           HeightRequest="50"
+                           HorizontalOptions="FillAndExpand"
+                           BorderColor="#D3D3D3">
+                        <Grid>
+                            <Image Source="ser.png"
+                                   HeightRequest="20"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"
+                                   Margin="10,0,10,0" />
+                            <Entry x:Name="SearchEntry"
+                                   Placeholder="Buscar"
+                                   HorizontalOptions="FillAndExpand"
+                                   TextColor="Black"
+                                   BackgroundColor="Transparent"
+                                   FontSize="16"
+                                   PlaceholderColor="#959595"
+                                   Margin="40,0,10,0" />
+                        </Grid>
+                    </Frame>
+                    <Button Text="Buscar"
+                            BackgroundColor="#009b84"
+                            TextColor="White"
+                            Margin="5,0,0,0"
+                            Clicked="OnSearchButtonClicked" />
+                </StackLayout>
+
+                <!-- Mapa -->
+                <maps:Map x:Name="map"
+                          VerticalOptions="FillAndExpand"
+                          HeightRequest="280" />
+
+                <!-- Información dinámica de las reuniones -->
+                <VerticalStackLayout x:Name="EventsStackLayout" Padding="20" Spacing="10">
+                    <!-- Aquí se insertarán los eventos dinámicamente -->
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiAppMovi.Views.Legal.TermsAndConditionsPage"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView Padding="20">
+            <StackLayout Spacing="20">
+
+                <Frame BackgroundColor="#009688" Padding="10" HasShadow="False" BorderColor="Transparent">
+                    <Label Text="Términos y Condiciones" 
+                           FontSize="Large" 
+                           HorizontalOptions="Center" 
+                           TextColor="White" 
+                           FontAttributes="Bold"/>
+                </Frame>
+
+                <Frame Padding="15" BackgroundColor="White" HasShadow="False" BorderColor="Transparent">
+                    <Label Text="Bienvenido a EventManager. Al utilizar esta aplicación, aceptas nuestros términos de uso. Debes proporcionar información verdadera y mantener la confidencialidad de tus datos de inicio de sesión. La aplicación es solo para actividades legales y eres responsable de su uso adecuado. EventManager puede modificar sus servicios en cualquier momento. La aplicación y su contenido son propiedad de POTAXIE, protegidos por leyes de propiedad intelectual. EventManager no se responsabiliza por el uso incorrecto o daños derivados del uso de la aplicación."
+                           FontSize="Medium"
+                           TextColor="#4a4a4a"
+                           HorizontalTextAlignment="Start"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="FillAndExpand"
+                           LineBreakMode="WordWrap"
+                           />
+                </Frame>
+
+                <Frame BackgroundColor="#009688" Padding="10" HasShadow="False" BorderColor="Transparent">
+                    <Label Text="Política de Tratamiento de Datos" 
+                           FontSize="Large" 
+                           HorizontalOptions="Center" 
+                           TextColor="White" 
+                           FontAttributes="Bold"/>
+                </Frame>
+
+                <Frame Padding="15" BackgroundColor="White" HasShadow="False" BorderColor="Transparent">
+                    <Label Text="EventManager cumple con las leyes de protección de datos, como el GDPR y la LFPDPPP, asegurando la seguridad de tu información mediante cifrado TLS y AES. Recopilamos solo los datos esenciales, como nombre y correo electrónico, para gestionar tu cuenta y eventos. Los datos se mantienen mientras uses la aplicación; si eliminas tu cuenta, serán borrados de forma segura. Puedes acceder, corregir o eliminar tus datos personales en cualquier momento. Compartimos datos únicamente con terceros necesarios para el funcionamiento de la aplicación, como los organizadores de eventos."
+                           FontSize="Medium"
+                           TextColor="#4a4a4a"
+                           HorizontalTextAlignment="Start"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="FillAndExpand"
+                           LineBreakMode="WordWrap"/>
+                </Frame>
+
+                <Grid ColumnSpacing="10" Padding="0,20,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="Rechazar" 
+                            BackgroundColor="#009688"
+                            TextColor="White" 
+                            CornerRadius="20"
+                            FontAttributes="Bold"
+                            Grid.Column="0" 
+                            HorizontalOptions="Center"
+                            WidthRequest="150"
+                            Clicked="OnRejectClicked"/>
+
+                    <Button Text="Aceptar" 
+                            BackgroundColor="#009688"
+                            TextColor="White" 
+                            CornerRadius="20"
+                            FontAttributes="Bold"
+                            Grid.Column="1" 
+                            HorizontalOptions="Center"
+                            WidthRequest="150"
+                            Clicked="OnAcceptClicked"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

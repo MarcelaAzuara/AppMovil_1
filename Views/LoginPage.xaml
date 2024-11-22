@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiAppMovi.Views.LoginPage"
+             BackgroundColor="White">
+    <Grid>
+        <Image Grid.Row="0" Aspect="AspectFill" Source="login.png" HeightRequest="780"/>
+
+        <Grid Grid.Row="0">
+            <VerticalStackLayout Margin="20, 350, 20, 0">
+                <Label FontAttributes="Bold"
+                       FontFamily="Medium"
+                       FontSize="Medium"
+                       Text="¡Bienvenido!"
+                       TextColor="#009b84"/>
+                <Label FontFamily="Thin"
+                       Text="A continuación inicia sesión"
+                       TextColor="#959595"/>
+
+
+                <Frame Margin="0, 20, 0, 0" BorderColor="LightGray" BackgroundColor="White" CornerRadius="10" Padding="10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="usu.png" HeightRequest="24" Grid.Column="0" VerticalOptions="Center"/>
+                        <Entry Placeholder="Correo electrónico"
+                               x:Name="GmailEntry"  
+                            Grid.Column="1"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"/>
+                    </Grid>
+                </Frame>
+
+                <Frame Margin="0, 10, 0, 0" BorderColor="LightGray" BackgroundColor="White" CornerRadius="10" Padding="10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="contra.png" HeightRequest="24" Grid.Column="0" VerticalOptions="Center"/>
+                        <Entry Placeholder="Contraseña"
+                               x:Name="PasswordEntry"
+                               IsPassword="True"
+                               Grid.Column="1"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"/>
+                        <ImageButton Source="ojo.png"
+                                     Grid.Column="2"
+                                     HeightRequest="24"
+                                     WidthRequest="24"
+                                     Clicked="OnTogglePasswordVisibility" />
+                    </Grid>
+                </Frame>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="0, 10, 0, 10">
+                    <CheckBox x:Name="RememberMeCheckBox" 
+                              Color="#009b84"
+                              CheckedChanged="OnRememberMeCheckedChanged" />
+                    <Label Text="Recordar contraseña" 
+                           VerticalOptions="Center" 
+                           TextColor="Gray" />
+                </StackLayout>
+
+                <Button Margin="0, 0, 0, 20"
+                        Text="Iniciar Sesión"
+                        TextColor="White"
+                        BackgroundColor="#009b84"
+                        CornerRadius="20"
+                        FontAttributes="Bold"
+                        Clicked="OnLoginButtonClicked"
+                        HeightRequest="50"
+                        WidthRequest="180" />
+
+                <Button Text="Iniciar con Google"
+                        TextColor="Gray"
+                        BackgroundColor="White"
+                        CornerRadius="20"
+                        HeightRequest="50"
+                        WidthRequest="280"
+                        BorderColor="Gray"  
+                        BorderWidth="1" >
+                    <Button.ImageSource>
+                        <FileImageSource File="google.png" />
+                    </Button.ImageSource>
+                </Button>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>
